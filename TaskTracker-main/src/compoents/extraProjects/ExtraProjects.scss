@@ -1,0 +1,105 @@
+// ExtraProjectsHeader.scss
+
+$primary-color: #14b8a6; // Teal color
+$text-color: #333;
+$border-color: #e5e7eb;
+$bg-color: #fff;
+
+.extra-projects-header {
+  background-color: $bg-color;
+  padding: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $text-color;
+    }
+
+    .date-range {
+      display: flex;
+      align-items: center;
+
+      .date-indicator {
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: #10b981; // Green color
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+
+      span {
+        font-size: 0.875rem;
+        color: #6b7280; // Gray color
+      }
+
+      button {
+        color: #3b82f6; // Blue color
+        margin-left: 0.5rem;
+        &:hover {
+          color: #2563eb; // Darker blue on hover
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-controls,
+    .right-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    button,
+    .ant-select,
+    .ant-input-affix-wrapper {
+      border-color: $border-color;
+    }
+
+    .ant-btn-primary {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: white;
+
+      &:hover {
+        background-color: darken($primary-color, 5%);
+        border-color: darken($primary-color, 5%);
+      }
+    }
+
+    .ant-input-search {
+      width: 16rem;
+    }
+  }
+}
+
+
+.add-project-model {
+  position: relative !important;
+  background-color: red;
+}
+.add-project-model::before {
+  z-index: 10 !important;
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: 16px !important; 
+  padding: 10px !important; 
+  background:linear-gradient(45deg,#189AB0,#7BD75B) !important; 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0) !important;
+  -webkit-mask-composite: xor !important;
+          mask-composite: exclude !important; 
+}

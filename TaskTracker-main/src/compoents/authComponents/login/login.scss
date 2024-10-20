@@ -1,0 +1,117 @@
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-content {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .login-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .company-logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      .company-name {
+        display: flex;
+        flex-direction: column;
+
+        .company-subtext {
+          color: #8c8c8c;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .company-maintext {
+          color: #262626;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .login-card {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+      .card-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .google-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 20px;
+
+        .google-icon {
+          margin-right: 8px;
+        }
+      }
+
+      .ant-form-item-label > label {
+        font-weight: 500;
+      }
+
+      .login-button {
+        height: 40px;
+        background-color: #189ab0;
+        border-color: #189ab0;
+
+        &:hover,
+        &:focus {
+          background-color: #1389a0;
+          border-color: #1389a0;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+
+    .login-content {
+      .login-logo {
+        .company-name {
+          .company-subtext {
+            font-size: 12px;
+          }
+
+          .company-maintext {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .login-card {
+        .card-title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

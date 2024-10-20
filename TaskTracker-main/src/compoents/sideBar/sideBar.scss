@@ -1,0 +1,69 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
+  border-bottom: #e6e6e6 1px solid;
+  height: 75px;
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.17lh;
+
+    .company-subtext {
+      color: #8c8c8c;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .company-maintext {
+      color: #262626;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+.ant-menu-item-selected {
+  border-radius: 0px !important;
+  border-right: 3px solid #13c2c2 !important;
+  background-color: #e6fffb !important;
+  color: #13c2c2 !important;
+}
+
+.ant-menu-submenu-title {
+  color: black !important;
+  background-color: white !important;
+  border-radius: 0px;
+}
+
+.ant-menu-item {
+  border-radius: 0px !important;
+  // background-color: white !important;
+}
+.ant-menu-title-content {
+  font-weight: 400 !important ;
+  font-size: 14px !important;
+  text-align: left;
+}
+
+.ant-menu-item :hover {
+  border-radius: 0px !important;
+}
+
+.ant-list-item-meta-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.increase-icon{
+  font-size: 20px !important;
+}

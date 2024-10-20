@@ -1,0 +1,8 @@
+.scroll{
+    overflow-x: scroll !important;
+    flex-wrap: nowrap !important;
+    flex-flow: nowrap !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}

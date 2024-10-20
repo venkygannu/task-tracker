@@ -1,0 +1,40 @@
+.editable-cell {
+    position: relative;
+}
+
+.editable-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+    padding: 4px 11px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.ant-table-tbody > tr > td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 4ch; /* Limit the width to 4 characters */
+}
+
+.ant-table-tbody > tr > td:hover {
+    text-overflow: clip;
+    overflow: visible;
+    white-space: normal;
+}
+
+.ant-table-expanded-row .ant-table-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 4ch; /* Ensure the width is limited in the expanded row */
+}
+
+.ant-table-expanded-row .ant-table-cell:hover {
+    text-overflow: clip;
+    overflow: visible;
+    white-space: normal;
+}

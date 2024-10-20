@@ -1,0 +1,178 @@
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0px;
+  background-color: #fff;
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .task-status {
+    display: flex;
+    align-items: center;
+
+    .ant-progress {
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    .break-button {
+      background-color: #f0f0f0;
+      border: none;
+      color: #333;
+      margin-right: 10px;
+    }
+
+    .timer {
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    .punch-out-button {
+      margin-right: 20px;
+    }
+
+    .notification-badge {
+      margin-right: 20px;
+
+      .notification-icon {
+        font-size: 20px;
+        color: #666;
+      }
+    }
+
+    .ant-dropdown-link {
+      display: flex;
+      align-items: center;
+      color: #333;
+
+      .ant-avatar {
+        margin-right: 8px;
+      }
+
+      .user-name {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+// Custom progress bar colors
+.ant-progress-bg {
+  background-image: linear-gradient(
+    to right,
+    #87d068 0%,
+    #87d068 30%,
+    #ffe58f 30%,
+    #ffe58f 60%,
+    #ff4d4f 60%,
+    #ff4d4f 80%,
+    #722ed1 80%,
+    #722ed1 100%
+  );
+}
+
+
+.header-left-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .button-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .custom-break-button{
+    border-radius: 2px;
+  }
+  .timer{
+    display: block;
+    width: 45px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .punch-out-button {
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .punch-in-button {
+    background-color: rgb(47, 152, 117);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .notification {
+    // width: 70px;
+    padding-right: 25px;
+  }
+
+  .profile-dropdown {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(to right, #047723 0%, #4eef6e 100%) 1;
+
+    .ant-dropdown-link {
+      display: flex;
+      align-items: center;
+      color: #333;
+      gap: 5px;
+    }
+    .ant-dropdown-link > div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      line-height: 0.6lh;
+    }
+    .username {
+      width: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .userrole {
+      font-size: 12px;
+      color: #8c8c8c;
+    }
+  }
+}
+
+.header-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  // justify-content: end;
+  margin-bottom: -7px;
+  line-height: 0.5lh;
+  span {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .header-progress-bar {
+    width: 80%;
+  }
+}

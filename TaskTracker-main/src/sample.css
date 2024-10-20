@@ -1,0 +1,49 @@
+.container {
+    width: 1440px;
+    height: 944px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .Content {
+        width: 600px;
+        height: 676.8px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .Logo {
+            align-self: stretch;
+            padding: 20px;
+            border-radius: 16px;
+            overflow: hidden;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            .CompanyLogo2 {
+                width: 75px;
+                height: 76px;
+            }
+
+            .Frame91 {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .Tutorsquest{
+                    
+                }
+            }
+        }
+    }
+
+}
